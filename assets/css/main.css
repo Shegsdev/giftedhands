@@ -1,0 +1,139 @@
+/*
+** Under the Creative Commons License
+** @author Segun Akanbi
+*/
+
+html {
+	scroll-behavior: smooth;
+	transition: all 0.5s;
+}
+body {
+	margin: 0;
+	font-family: Montserrat;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#container {
+	overflow: hidden;
+}
+.segment {
+	padding: 150px;
+}
+
+.hero, .page-2, .page-3, .page-4 {
+	display: grid;
+	grid-template-columns: 4fr 2fr;
+	height: 665px;
+}
+.hero .hero-text {
+	margin: 150px;
+}
+.hero-image {
+	position: relative;
+	text-align: right;
+}
+.hero-image .water-mark {
+	background: #03a9f473;
+	border-radius: 50%;
+	mix-blend-mode: hue;
+	height: 850px;	 
+	opacity: 0.2;
+	width: 850px;
+	position: absolute;
+	right: -150px;
+	top: -230px;
+}
+.hero-image img {
+	filter: grayscale(50%);
+  -webkit-filter:grayscale(80%);
+	margin-top: 50px;
+	width: 100%;
+}
+.hero-text header {
+	font-family: 'Fira Code light';
+	text-transform: uppercase;
+}
+.hero-text h1 {
+	font-family: Montserrat;
+	font-size: 58px;
+	margin-top: 15px;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+.hero button, .footer button {
+	background: #3276c3;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #fff;
+	padding: 16px 30px;
+	text-transform: uppercase;
+}
+button:focus {
+	box-shadow: 2px 2px 2px #9fc6f3;
+	outline: none;
+}
+.segment p, .segment li {
+	font-size: 14px;
+	font-family: Montserrat Regular;
+	line-height: 2.2em;
+	padding-right: 55px;
+	text-align: justify
+}
+section h1 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.segment li {
+	text-transform: uppercase;
+	text-align: left;
+}
+section header {
+	color: #bbb;
+	font-size: 13px;
+	font-family: Montserrat Medium;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.footer {
+	background-color: #e8f7fe;
+	display: grid;
+	grid-template-columns: 2fr 2fr 1.5fr;
+}
+.footer p {
+	text-align: left;
+}
+.contact .socials {
+	display: flex;
+	justify-content: flex-start;
+}
+.contact .socials img {
+	width: 40%;
+}
+
+ash {
+	color: #03a9f473;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.navigator img {
+	opacity: 0.15;
+	width: 6%;
+	animation: scroll 1.5s infinite alternate;
+}
+
+@keyframes scroll {
+	from { transform: translateY(0px) }
+	to { transform: translateY(15px) }
+}
