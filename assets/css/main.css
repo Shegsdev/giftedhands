@@ -28,10 +28,12 @@ body {
 	padding: 150px;
 }
 
+.hero {
+	height: 665px;
+}
 .hero, .page-2, .page-3, .page-4 {
 	display: grid;
 	grid-template-columns: 4fr 2fr;
-	height: 665px;
 }
 .hero .hero-text {
 	margin: 150px;
@@ -109,6 +111,7 @@ section header {
 	background-color: #e8f7fe;
 	display: grid;
 	grid-template-columns: 2fr 2fr 1.5fr;
+	height: 100%;
 }
 .footer p {
 	text-align: left;

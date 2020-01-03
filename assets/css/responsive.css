@@ -20,7 +20,6 @@
 	}
 	.hero, .page-2, .page-3, .page-4 {
   	grid-template-columns: 1fr;
-  	/*height: 100%;*/
   }
 	.segment p, .segment li {
 		padding: 0;
@@ -50,13 +49,16 @@
 
 @media (max-width: 790px) {
 	.segment {
-		padding: 50px;
+		padding: 30px;
 	}
   .hero .hero-text {
 		margin: 80px 20px;
 	}
+	#page-3 {
+		height: 830px !important;
+	}
   section .segment {
-  	margin: 20px;
+  	margin: 0;
   }
   .segment p, .segment li {
 		font-size: 13px;
