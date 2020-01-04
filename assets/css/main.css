@@ -60,7 +60,7 @@ body {
 	width: 100%;
 }
 .hero-text header {
-	font-family: 'Fira Code light';
+	font-family: 'Fira Code light', monospace;
 	text-transform: uppercase;
 }
 .hero-text h1 {
@@ -107,6 +107,9 @@ section header {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+.page-4 .skills {
+  	display: none;
+ }
 .footer {
 	background-color: #e8f7fe;
 	display: grid;
@@ -131,9 +134,9 @@ ash {
 }
 
 .navigator img {
-	opacity: 0.15;
+	opacity: 0.55;
 	width: 6%;
-	animation: scroll 1.5s infinite alternate;
+	animation: scroll 1s infinite alternate;
 }
 
 @keyframes scroll {

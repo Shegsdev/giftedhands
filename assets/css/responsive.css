@@ -48,18 +48,37 @@
 }
 
 @media (max-width: 790px) {
+	.navigator img {
+		opacity: 0.25;
+		width: 10%;
+	}
 	.segment {
 		padding: 30px;
 	}
   .hero .hero-text {
 		margin: 80px 20px;
 	}
-	#page-3 {
-		height: 830px !important;
-	}
   section .segment {
   	margin: 0;
   }
+  .page-3 .skills {
+  	display: none;
+  }
+  .page-4 .skills {
+  	display: block;
+ 	}
+	.page-4 .int-skill__list {
+	 	display: flex;
+	}
+	.page-4 .int-skill__list h1 {
+	 	font-size: 16px;
+	}
+	.page-4 .int-skill__list section ul {
+	 	padding: 10px;
+	}
+	.page-4 .int-skill__list section ul li {
+		font-size: 12px;
+	}
   .segment p, .segment li {
 		font-size: 13px;
 		line-height: 2em;
@@ -82,7 +101,11 @@
 }
 
 @media (max-width: 340px) {
+	.navigator img {
+		width: 18%;
+	}
 	.segment {
+		margin: 15px;
 		padding: 0;
 	}
 	nav {
@@ -94,9 +117,6 @@
   .hero .hero-text {
 		margin: 80px 20px;
 	}
-  .segment {
-  	margin: 15px;
-  }
   .segment p, .segment li {
 		font-size: 12px;
 		line-height: 1,5em;
@@ -115,5 +135,12 @@
 	}
 		.contact .socials a {
 		margin: 10px;
+	}
+}
+
+@media (max-width: 320px) {
+	.segment {
+		margin: 0;
+		padding: 15px;
 	}
 }
