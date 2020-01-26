@@ -8,7 +8,7 @@
     <meta name="description" content="Software Software Engineer"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900' rel='stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155071079-1"></script>
@@ -21,8 +21,55 @@
     </script>
 
     
+    <style>
+      .loader {
+        background-color: rgba(255,255,255,0.9);
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+      }
+      .lds-ripple {
+        border-radius: 50%;
+        margin: 20% auto;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-ripple div {
+        position: absolute;
+        border: 4px solid #3276c3;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+      }
+      @keyframes lds-ripple {
+        0% {
+          top: 36px;
+          left: 36px;
+          width: 0;
+          height: 0;
+          opacity: 1;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+          width: 72px;
+          height: 72px;
+          opacity: 0;
+        }
+      }
+
+    </style>
   </head>
   <body>
+    <div class="loader">
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
 
     <div id="container">
       <div class="wrapper section" data-anchor="Page 1">
@@ -33,8 +80,8 @@
                <code>software engineer</code>
               </header>
               <h1>segun <br>akanbi</h1>
-              <a href="#page-5">
-                <button>contact me</button>
+              <a href="#page-8">
+                <button onclick="window.scrollTo(null, document.body.scrollHeight)">contact me</button>
               </a>
             </section>
           </div>
@@ -97,6 +144,7 @@
               </p>
             </section>
             <section class="skills">
+              <div class="water-mark"></div>
               <h1>skills</h1>
               <ul>
                 <li>ui/ux</li>
@@ -111,8 +159,33 @@
         </section>
 
         <!-- PAGE 4-->
-        <section id="tab-interests" data-anchor="Page 4">
+        <section id="tab-experience" data-anchor="Page 4">
           <div class="page-4 segment section noselect">
+            <section class="experience">
+              <small>Andela</small>
+              <header>Software Development Bootcamp</header>
+              <p>
+                <ash>#</ash> Built a functional web application using no web framework or UI libraries. <br>
+                <ash>#</ash> Designed complex APIs using Agile methodologies. <br>
+                <ash>#</ash> Acquired professional work ethics and embodied core values.
+              </p>
+              <br/>
+
+              <small>HiiT Plc</small>
+              <header>Web Development Intern</header>
+              <p>
+                <ash>#</ash> Acquired basic frontend skills for Mobile/Web Development. <br>
+                <ash>#</ash> Learned Graphic Design tools for Application development. <br>
+                <ash>#</ash> Designed static websites using modern web technologies. <br> 
+                <ash>#</ash> Acquired Customer relation and representative skills. <br> 
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <!-- PAGE 5-->
+        <section id="tab-interests" data-anchor="Page 5">
+          <div class="page-5 segment section noselect">
             <section>
               <small>Hallmark Ventures​</small>
               <header>network & systems engineer</header>
@@ -151,9 +224,63 @@
           </div>
         </section>
 
-        <!-- PAGE 5-->
-        <!-- <section id="tab-posts" data-anchor="Page 5">
-          <div class="page-5 segment section noselect">
+        <!-- PAGE 6-->
+        <section id="tab-projects" data-anchor="Page 6">
+          <div class="page-6 segment section noselect">
+            <section class="projects">
+              <div class="water-mark"></div>
+              <h1>Projects</h1>
+              <p>I've worked on a few projects, both independently and also with a team.
+              <div class="project-list">
+                <div class="card project-1">
+                  <div class="card-image" style="background-size: contain;"></div>
+                  <div class="card-body">
+                    <small>A food ordering application integrated into an existing website.<br/><i>crunchiesfriedchickenltd.com</i></small>
+                    <div class="card-actions">
+                      <button style="cursor: not-allowed;">View Source</button>
+                      <button onclick="redirect('https://crunchies.herokuapp.com')">View Site</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card project-2">
+                  <div class="card-image" style="background-size: contain;"></div>
+                  <div class="card-body">
+                    <small>A light-weight banking application built using vanilla JavaScript (No frameworks, no ORMs, no UI library).</small>
+                    <div class="card-actions">
+                      <button onclick="redirect('https://github.com/Shegsdev/Banka')">View Source</button>
+                      <button onclick="redirect('https://shegsdev.github.io/Banka')">View Site</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card project-3">
+                  <div class="card-image"></div>
+                  <div class="card-body">
+                    <small>What movie are you planning to see this weekend? Check in to get more details about the show. </small>
+                    <div class="card-actions">
+                      <button onclick="redirect('https://github.com/Shegsdev/react-spa')">View Source</button>
+                      <button onclick="redirect('http://mazemovies.herokuapp.com/')">View Site</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card project-4">
+                  <div class="card-image"></div>
+                  <div class="card-body">
+                    <small>Official website for Neural Technologies. <br/> <mark><i>This is proprietary application</i></mark></small>
+                    <div class="card-actions">
+                      <button style="cursor: not-allowed;">View Source</button>
+                      <button onclick="redirect('https://neuraltechx.com')">View Site</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+              
+          </div>
+        </section>
+
+        <!-- PAGE 7-->
+        <!-- <section id="tab-posts" data-anchor="Page 7">
+          <div class="page-7 segment section noselect">
             <section class="posts">
               <h1>Posts</h1>
               <ul>
@@ -166,14 +293,14 @@
           </div>
         </section> -->
 
-        <!-- PAGE 6-->
-        <section id="tab-contact" data-anchor="Page 5">
-          <div class="page-6 segment section footer">
+        <!-- PAGE 8-->
+        <section id="tab-contact" data-anchor="Page 8">
+          <div class="page-8 segment section footer">
             <section class="contact" id="contact">
               <h1>contact</h1>
               <small>Reach out to me via email:</small>
               <a href="mailto:akanbisegun1@gmail.com">
-                <i>akanbisegun1@gmail.com</i>
+                <mark><i>akanbisegun1@gmail.com</i></mark>
               </a>
               <p>OR</p>
               <h3><small>Call: </small>+234 906 954 0681</h3>
@@ -211,7 +338,18 @@
     </script>
 
     <script>
-      new Pageable("#container");
+      if (window.innerWidth > 991) new Pageable("#container");
+
+      // handle external urls
+      function redirect(url) {
+        document.querySelector('.loader').style.display = 'block';
+        
+
+        new Promise((resolve, reject) => (
+          setTimeout(() => resolve(document.querySelector('.loader').style.display = 'none'), 1000))
+        ).then(() => window.open(url, '_blank'))
+
+      }
     </script>
     
 

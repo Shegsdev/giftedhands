@@ -8,8 +8,16 @@ html {
 	transition: all 0.5s;
 }
 body {
+	background--color: #f8f8f8d6;
+	font-size: 16px;
 	margin: 0;
-	font-family: Montserrat;
+	font-family: 'Montserrat';
+}
+ul {
+	list-style-type: circle;
+}
+mark {
+	background-color: #3276c3;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -21,17 +29,60 @@ body {
                                   supported by Chrome and Opera */
 }
 
+.card .card-body {
+	background: #f7f7f7;
+	border: 1px solid #eee;
+	border-top: none;
+	padding: 10px;
+}
+.card:hover {
+	box-shadow: 1px 1px 8px 2px #eceaec;
+}
+.card .card-image {
+	border: 1px solid #eee;
+	border-bottom: none;
+}
+.card .card-image:hover {
+	cursor: pointer;
+}
+.card .card-actions {
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.card button {
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #9fc6f3;
+	border: none;
+	border-radius: 25px;
+	color: #000;
+	cursor: pointer;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	padding: 10px 20px;
+}
+.card button a {
+	color: inherit;
+	text-decoration: none;
+}
+.card button:hover {
+	background: #3276c3;
+	color: #fff;
+}
+.card-actions button:first-child {
+	background: gray;
+}
 #container {
 	overflow: hidden;
 }
 .segment {
-	padding: 150px;
+	padding: 100px;
 }
 
 .hero {
-	height: 665px;
+	height: 653px;
 }
-.hero, .page-2, .page-3, .page-4 {
+.hero, .page-2, .page-3, .page-4, .page-5 {
 	display: grid;
 	grid-template-columns: 4fr 2fr;
 }
@@ -54,18 +105,18 @@ body {
 	top: -230px;
 }
 .hero-image img {
-	filter: grayscale(50%);
+	filter: grayscale(80%);
   -webkit-filter:grayscale(80%);
 	margin-top: 50px;
-	width: 100%;
+	width: 120%;
 }
 .hero-text header {
 	font-family: 'Fira Code light', monospace;
 	text-transform: uppercase;
 }
 .hero-text h1 {
-	font-family: Montserrat;
-	font-size: 58px;
+	font-weight: 700;
+	font-size: 56px;
 	margin-top: 15px;
 	line-height: 1.1em;
 	text-transform: uppercase;
@@ -86,14 +137,13 @@ button:focus {
 	outline: none;
 }
 .segment p, .segment li {
-	font-size: 14px;
-	font-family: Montserrat Regular;
 	line-height: 2.2em;
 	padding-right: 55px;
-	text-align: justify
+	text-align: justify;
 }
 section h1 {
 	font-size: 22px;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 .segment li {
@@ -107,11 +157,71 @@ section header {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.page-4 .skills {
-  	display: none;
- }
+section ul {
+	padding: 15px;
+}
+section.skills {
+	position: relative;
+}
+section.skills .water-mark {
+	background-color: #c73c09;
+	border-radius: 50%;
+	height: 850px;	 
+	opacity: 0.15;
+	position: absolute;
+	width: 850px;
+	right: -250px;
+	top: -350px;
+}
+.page-5 .skills {
+	display: none;
+}
+section.projects {
+	position: relative;
+}
+section.projects .water-mark {
+	background-color: #585112;
+	border-radius: 50%;
+	height: 850px;
+	opacity: 0.15;
+	position: absolute;
+	width: 850px;
+	left: -330px;
+	top: -1000px;
+	z-index: -999;
+}
+.projects .project-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1em;
+}
+.project-list .card-image {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 250px;
+	filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+}
+.project-list .card-image:hover {
+	filter: grayscale(10%);
+  -webkit-filter: grayscale(10%);
+}
+.project-list .project-1 .card-image {
+	background-image: url("../images/crunchies_logo_main.png");
+}
+.project-list .project-2 .card-image {
+	background-image: url("../images/banka.png");
+}
+.project-list .project-3 .card-image {
+	background-image: url("../images/movies.jpg");
+}
+.project-list .project-4 .card-image {
+	background-image: url("../images/neuraltechx.png");
+}
 .footer {
-	background-color: #e8f7fe;
+	background-color: #000;
+	color: #fff;
 	display: grid;
 	grid-template-columns: 2fr 2fr 1.5fr;
 	height: 100%;
@@ -124,7 +234,16 @@ section header {
 	justify-content: flex-start;
 }
 .contact .socials img {
-	width: 40%;
+	filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+	width: 30%;
+}
+.contact .socials img:hover {
+	filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+.contact .socials a {
+	text-decoration: none;
 }
 
 ash {
@@ -134,9 +253,9 @@ ash {
 }
 
 .navigator img {
+	animation: scroll 1s infinite alternate;
 	opacity: 0.55;
 	width: 6%;
-	animation: scroll 1s infinite alternate;
 }
 
 @keyframes scroll {
