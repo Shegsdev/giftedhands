@@ -17,18 +17,9 @@ ul {
 	list-style-type: circle;
 }
 mark {
-	background-color: #9E9E9E;
+	background-color: #000;
+        color: #fff;
 }
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
-
 .card .card-body {
 	background: #f7f7f7;
 	border: 1px solid #eee;
@@ -70,7 +61,8 @@ mark {
 	color: #fff;
 }
 .card-actions button:first-child {
-	background: gray;
+	background: #3276c3;
+        color: #fff;
 }
 #container {
 	overflow: hidden;

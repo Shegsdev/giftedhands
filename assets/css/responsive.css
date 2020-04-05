@@ -60,7 +60,7 @@
 	}
 }
 
-@media (max-width: 790px) {
+@media (max-width: 890px) {
 	.navigator img {
 		opacity: 0.25;
 		width: 10%;
@@ -106,6 +106,10 @@
 	}
 	.projects .project-list {
     grid-template-columns: repeat(1, 1fr);
+	}
+	.projects .project-list .card-image {
+    filter: initial;
+    -webkit-filter: initial;
 	}
 	.contact .socials img {
 		filter: grayscale(0%);

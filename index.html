@@ -20,57 +20,8 @@
       gtag('config', 'UA-155071079-1');
     </script>
 
-    
-    <style>
-      .loader {
-        background-color: rgba(255,255,255,0.9);
-        display: none;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        z-index: 99;
-      }
-      .lds-ripple {
-        border-radius: 50%;
-        margin: 20% auto;
-        position: relative;
-        width: 80px;
-        height: 80px;
-      }
-      .lds-ripple div {
-        position: absolute;
-        border: 4px solid #3276c3;
-        opacity: 1;
-        border-radius: 50%;
-        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-      }
-      .lds-ripple div:nth-child(2) {
-        animation-delay: -0.5s;
-      }
-      @keyframes lds-ripple {
-        0% {
-          top: 36px;
-          left: 36px;
-          width: 0;
-          height: 0;
-          opacity: 1;
-        }
-        100% {
-          top: 0px;
-          left: 0px;
-          width: 72px;
-          height: 72px;
-          opacity: 0;
-        }
-      }
-
-    </style>
   </head>
   <body>
-    <div class="loader">
-      <div class="lds-ripple"><div></div><div></div></div>
-    </div>
-
     <div id="container">
       <div class="wrapper section" data-anchor="Page 1">
         <div class="hero">
@@ -119,7 +70,7 @@
         </section>
 
         <!-- PAGE 3-->
-        <section id="tab-experience" data-anchor="Page 3">
+        <section id="tab-experience">
           <div class="page-3 segment section noselect">
             <section class="experience">
               <h1>experience</h1>
@@ -159,7 +110,7 @@
         </section>
 
         <!-- PAGE 4-->
-        <section id="tab-experience" data-anchor="Page 4">
+        <section id="tab-experience">
           <div class="page-4 segment section noselect">
             <section class="experience">
               <small>Andela</small>
@@ -184,7 +135,7 @@
         </section>
 
         <!-- PAGE 5-->
-        <section id="tab-interests" data-anchor="Page 5">
+        <section id="tab-interests">
           <div class="page-5 segment section noselect">
             <section>
               <small>Hallmark Ventures​</small>
@@ -225,7 +176,7 @@
         </section>
 
         <!-- PAGE 6-->
-        <section id="tab-projects" data-anchor="Page 6">
+        <section id="tab-projects">
           <div class="page-6 segment section noselect">
             <section class="projects">
               <div class="water-mark"></div>
@@ -237,7 +188,6 @@
                   <div class="card-body">
                     <small>A food ordering application integrated into an existing website.<br/><i>crunchiesfriedchickenltd.com</i></small>
                     <div class="card-actions">
-                      <button style="cursor: not-allowed;">View Source</button>
                       <button onclick="redirect('https://crunchies.herokuapp.com')">View Site</button>
                     </div>
                   </div>
@@ -267,8 +217,7 @@
                   <div class="card-body">
                     <small>Official website for Neural Technologies. <br/> <mark><i>This is proprietary application</i></mark></small>
                     <div class="card-actions">
-                      <button style="cursor: not-allowed;">View Source</button>
-                      <button onclick="redirect('https://neuraltechx.com')">View Site</button>
+                      <button onclick="redirect('https://www.neuraltechx.com')">View Site</button>
                     </div>
                   </div>
                 </div>
@@ -279,7 +228,7 @@
         </section>
 
         <!-- PAGE 7-->
-        <!-- <section id="tab-posts" data-anchor="Page 7">
+        <!-- <section id="tab-posts">
           <div class="page-7 segment section noselect">
             <section class="posts">
               <h1>Posts</h1>
@@ -294,7 +243,7 @@
         </section> -->
 
         <!-- PAGE 8-->
-        <section id="tab-contact" data-anchor="Page 8">
+        <section id="tab-contact">
           <div class="page-8 segment section footer">
             <section class="contact" id="contact">
               <h1>contact</h1>
@@ -327,28 +276,12 @@
 
       </main>
     </div>    
-    
-    
-
-
-    <!-- <script src="./assets/js/jquery.min.js"></script> -->
-    <!-- Source code reference: https://github.com/Mobius1/Pageable -->
-    <script src="./assets/js/pageable.min.js">
-      // Copyright (c) 2017 Karl Saunders (http://mobius.ovh)
-    </script>
 
     <script>
-      if (window.innerWidth > 991) new Pageable("#container");
 
       // handle external urls
       function redirect(url) {
-        document.querySelector('.loader').style.display = 'block';
-        
-
-        new Promise((resolve, reject) => (
-          setTimeout(() => resolve(document.querySelector('.loader').style.display = 'none'), 1000))
-        ).then(() => window.open(url, '_blank'))
-
+	return window.open(url, '_blank')
       }
     </script>
     
