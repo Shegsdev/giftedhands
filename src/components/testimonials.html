@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Segun Akanbi | Welcome</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Segun Akanbi"/>
+    <meta name="description" content="Software Engineer"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155071079-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-155071079-1');
+    </script>
+
+  </head>
+  <body>
+    <!-- Hamburger -->
+      <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
+      <div class="open">
+        <span class="cls"></span>
+        <span>
+            <ul class="sub-menu ">
+                <li>
+                    <a href="../../index.html" title="home" class="ham_link">Home</a>
+                </li>
+                <li>
+                    <a href="#page-2" title="about" class="ham_link">About</a>
+                </li>
+                <li>
+                    <a href="#page-3" title="experience" class="ham_link">Experience</a>
+                </li>
+                <li>
+                    <a href="#page-6" title="projects" class="ham_link">Projects</a>
+                </li>
+                <li>
+                    <a href="./src/components/testimonials.html" title="testimonials">Testimonials</a>
+                </li>
+            </ul>
+        </span>
+        <span class="cls"></span>
+    </div>
+    <div class="content">
+      <section class="testimonials">
+        <!-- <div class="water-mark"></div> -->
+        <h1>Testimonials</h1>
+        
+        <div class="testimonials-list">
+          <img src="../../assets/images/cert1.png" alt="cert1" />
+          <img src="../../assets/images/cert2.png" alt="cert2" /><hr>
+          <img src="../../assets/images/cert3.png" alt="cert3" />
+          <img src="../../assets/images/cert4.png" alt="cert4" /><hr>
+        </div>
+          
+        </div>
+      </section>
+    </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script>
+      <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
+      $(document).ready(function() {
+        $(document).delegate('.open', 'click', function(event){
+            $(this).addClass('oppenned');
+            event.stopPropagation();
+        })
+        $(document).delegate('body', 'click', function(event) {
+            $('.open').removeClass('oppenned');
+        })
+        $(document).delegate('.cls', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            event.stopPropagation();
+        });
+        $(document).delegate('.ham_link', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            event.stopPropagation();
+        });
+    });
+  </script>
+
+  </body>
+</html>
