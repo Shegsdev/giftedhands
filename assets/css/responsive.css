@@ -166,3 +166,14 @@
 		padding: 15px;
 	}
 }
+
+/*Testimonial page*/
+@media (max-width: 890px) {
+	section.testimonials {
+		margin: 20px;
+	}
+	.testimonials .testimonials-list img {
+		float: none;
+		width: 100%;
+	}
+}

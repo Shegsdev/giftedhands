@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Segun Akanbi"/>
-    <meta name="description" content="Software Software Engineer"/>
+    <meta name="description" content="Software Engineer"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900">
@@ -24,6 +24,32 @@
   <body>
     <div id="container">
       <div class="wrapper section" data-anchor="Page 1">
+        <!-- Hamburger -->
+        <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
+        <div class="open">
+          <span class="cls"></span>
+          <span>
+              <ul class="sub-menu ">
+                  <li>
+                    <a href="./index.html" title="home">Home</a>
+                  </li>
+                  <li>
+                      <a href="#page-2" title="about" class="ham_link">About</a>
+                  </li>
+                  <li>
+                      <a href="#page-3" title="experience" class="ham_link">Experience</a>
+                  </li>
+                  <li>
+                      <a href="#page-6" title="projects" class="ham_link">Projects</a>
+                  </li>
+                  <li>
+                      <a href="./src/components/testimonials.html" title="testimonials" class="ham_link">Testimonials</a>
+                  </li>
+              </ul>
+          </span>
+          <span class="cls"></span>
+      </div>
+
         <div class="hero">
           <div class="hero-text">
             <section class="noselect">
@@ -48,7 +74,7 @@
 
       <main id="code-main">
         <!-- PAGE 2-->
-        <section id="tab-about" data-anchor="Page 2">
+        <section id="page-2" data-anchor="Page 2">
           <div class="page-2 segment section noselect">
             <section class="objective">
               <h1></h1>
@@ -70,7 +96,7 @@
         </section>
 
         <!-- PAGE 3-->
-        <section id="tab-experience">
+        <section id="page-3">
           <div class="page-3 segment section noselect">
             <section class="experience">
               <h1>experience</h1>
@@ -176,7 +202,7 @@
         </section>
 
         <!-- PAGE 6-->
-        <section id="tab-projects">
+        <section id="page-6">
           <div class="page-6 segment section noselect">
             <section class="projects">
               <div class="water-mark"></div>
@@ -215,7 +241,7 @@
                 <div class="card project-4">
                   <div class="card-image"></div>
                   <div class="card-body">
-                    <small>Official website for Neural Technologies. <br/> <mark><i>This is proprietary application</i></mark></small>
+                    <small>Official website for Neural Technologies LLC. (neuraltechx) <br/> <mark><i>This is proprietary application</i></mark></small>
                     <div class="card-actions">
                       <button onclick="redirect('https://www.neuraltechx.com')">View Site</button>
                     </div>
@@ -283,6 +309,28 @@
       function redirect(url) {
 	return window.open(url, '_blank')
       }
+    </script>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script>
+      <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
+      $(document).ready(function() {
+        $(document).delegate('.open', 'click', function(event){
+            $(this).addClass('oppenned');
+            event.stopPropagation();
+        })
+        $(document).delegate('body', 'click', function(event) {
+            $('.open').removeClass('oppenned');
+        })
+        $(document).delegate('.cls', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            event.stopPropagation();
+        });
+        $(document).delegate('.ham_link', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            event.stopPropagation();
+        });
+    });
     </script>
     
 
