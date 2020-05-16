@@ -167,6 +167,22 @@
 	}
 }
 
+@media (max-width: 680px) {
+	/*Hamburger*/
+	.open {
+		background: #d4d4d4;
+		top: 30px;
+		right: 30px;
+	 	width: 60px;
+	 	height: 60px;
+	}
+	.open span {
+		background-color: #fff;
+		right: 15px;
+		top: 5px;
+	}
+}
+
 /*Testimonial page*/
 @media (max-width: 890px) {
 	section.testimonials {
