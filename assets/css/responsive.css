@@ -49,13 +49,7 @@
 	.contact, .contact p {
 		text-align: center !important;
 	}
-	.contact .socials {
-		display: flex;
-	}
-	.contact .socials img {
-		max-width: 60%;
-	}
-	.contact .socials a {
+	.contact a {
 		margin: 30px;
 	}
 }
@@ -82,11 +76,8 @@
 	.projects .project-list {
     grid-template-columns: repeat(2, 1fr);
 	}
-	.contact .socials {
+	.contact {
 		display: block;
-	}
-	.contact .socials img {
-		max-width: 10%;
 	}
 	section .footer {
   	grid-template-columns: 1fr;
@@ -110,10 +101,6 @@
 	.projects .project-list .card-image {
     filter: initial;
     -webkit-filter: initial;
-	}
-	.contact .socials img {
-		filter: grayscale(0%);
-	  -webkit-filter: grayscale(0%);
 	}
 }
 
@@ -146,13 +133,10 @@
 	.contact, .contact p {
 		text-align: center;
 	}
-	.contact .socials {
+	.contact {
 		display: block;
 	}
-	.contact .socials img {
-		max-width: 10%;
-	}
-		.contact .socials a {
+	.contact a {
 		margin: 10px;
 	}
 }

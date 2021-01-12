@@ -17,8 +17,7 @@ ul {
 	list-style-type: circle;
 }
 mark {
-	background-color: #000;
-        color: #fff;
+	background-color: #fff;
 }
 .card .card-body {
 	background: #f7f7f7;
@@ -72,14 +71,14 @@ mark {
 }
 
 .hero {
-	height: 653px;
+	/*height: 653px;*/
 }
 .hero, .page-2, .page-3, .page-4, .page-5 {
 	display: grid;
 	grid-template-columns: 4fr 2fr;
 }
 .hero .hero-text {
-	margin: 150px;
+	margin: 160px 0 0 160px;
 }
 .hero-image {
 	position: relative;
@@ -99,8 +98,8 @@ mark {
 .hero-image img {
 	filter: grayscale(80%);
   -webkit-filter:grayscale(80%);
-	margin-top: 50px;
-	width: 120%;
+	margin-top: 120px;
+	width: 100%;
 }
 .hero-text header {
 	font-family: 'Fira Code light', monospace;
@@ -110,7 +109,7 @@ mark {
 	font-weight: 700;
 	font-size: 56px;
 	margin-top: 15px;
-	line-height: 1.1em;
+	line-height: 1.3em;
 	text-transform: uppercase;
 }
 .hero button, .footer button {
@@ -212,29 +211,24 @@ section.projects .water-mark {
 	background-image: url("../images/neuraltechx.png");
 }
 .footer {
-	background-color: #000;
+	background-color: #3276c3;
 	color: #fff;
 	display: grid;
 	grid-template-columns: 2fr 2fr 1.5fr;
 	height: 100%;
 }
+.footer button {
+	background: #fff;
+	color: #3276c3;
+}
 .footer p {
 	text-align: left;
 }
-.contact .socials {
-	display: flex;
-	justify-content: flex-start;
+.contact img {
+	margin-right: 18px;
+	width: 8%;
 }
-.contact .socials img {
-	filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-	width: 30%;
-}
-.contact .socials img:hover {
-	filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-}
-.contact .socials a {
+.contact a {
 	text-decoration: none;
 }
 
@@ -285,7 +279,7 @@ section.testimonials {
 	 z-index: 999;
 }
  .open:hover {
-	 opacity: 0.5;
+	 opacity: 0.9;
 }
  .open span {
 	 display: block;
@@ -318,7 +312,7 @@ section.testimonials {
 	 right: 0;
 	 top: 0;
 	 position: absolute;
-	 background-color: rgba(38, 84, 133, 0.54);
+	 background-color: rgba(38, 84, 133, 0.74);
 	 border-radius: 50%;
 	 z-index: 18;
 	 overflow: hidden;

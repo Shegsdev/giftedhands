@@ -1,0 +1,88 @@
+/*
+** Under the Creative Commons License
+** @author Segun Akanbi
+*/
+
+html {
+	scroll-behavior: smooth;
+	transition: all 0.5s;
+}
+body {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,118,195,0.981127485173757) 35%, rgba(0,212,255,1) 100%);
+	font-size: 16px;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Montserrat';
+}
+a {
+	color: inherit;
+}
+a:visited {
+	color: inherit;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 30px;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 40px;
+	text-transform: uppercase;
+}
+nav a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+#wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#wrapper #intro {
+	position: relative;
+	left: 20%;
+}
+#wrapper h1 {
+	border-right: 1px solid #9c9ca1;
+	color: #d6d6d6;
+	font-size: 81px;
+	display: inline-block;
+	margin: 0;
+	padding-right: 8px;
+}
+#wrapper p {
+	animation: nameAnimation 8s forwards;
+	opacity: 0;
+	font-size: 40px;
+	margin: 0 0 20px;
+	padding: 0;
+}
+#wrapper small {
+	animation: aboutAnimation 10s forwards;
+	color: #fff;
+}
+#wrapper a {
+	color: #07caf9;
+}
+
+@keyframes nameAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes aboutAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

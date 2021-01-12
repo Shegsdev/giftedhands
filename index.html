@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Segun Akanbi"/>
     <meta name="description" content="Software Engineer"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+    <meta name="description" content="Freelancer"/>
+    <meta name="description" content="Blogger"/>
+    <meta name="description" content="Technical Writer"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,320 +21,91 @@
 
       gtag('config', 'UA-155071079-1');
     </script>
+    <style>
+      @media (max-width: 790px) {
+        body {
+          background: #3276c3;
+        }
+        nav img {
+          display: none;
+        }
+        nav {
+          display: block;
+          padding-left: 15px;
+          padding-right: 15px;
+          text-align: center;
+        }
+        nav ul {
+          padding: 0;
+        }
+        nav ul li{
+          font-size: 14px;
+          margin-right: 10px;
+        }
+        #wrapper {
+          display: block;
+          margin: 50px auto;
+        }
+        #wrapper h1 {
+          font-size: 52px;
+          border: none;
+        }
+        #wrapper #intro {
+          position: unset;
+          left: 0;
+          padding: 40px;
+          line-height: 2em;
+        }
+        #wrapper p {
+          font-size: 24px;
+        }
+        #wrapper small {
 
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="container">
-      <div class="wrapper section" data-anchor="Page 1">
-        <!-- Hamburger -->
-        <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
-        <div class="open">
-          <span class="cls"></span>
-          <span>
-              <ul class="sub-menu ">
-                  <li>
-                    <a href="./index.html" title="home">Home</a>
-                  </li>
-                  <li>
-                      <a href="#page-2" title="about" class="ham_link">About</a>
-                  </li>
-                  <li>
-                      <a href="#page-3" title="experience" class="ham_link">Experience</a>
-                  </li>
-                  <li>
-                      <a href="#page-6" title="projects" class="ham_link">Projects</a>
-                  </li>
-                  <li>
-                      <a href="./testimonials.html" title="testimonials" class="ham_link">Testimonials</a>
-                  </li>
-              </ul>
-          </span>
-          <span class="cls"></span>
+    <nav>
+      <img src="">
+      <div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./comingsoon.html">Blog</a></li>
+          <li><a href="./portfolio.html">Works</a></li>
+        </ul>
       </div>
-
-        <div class="hero">
-          <div class="hero-text">
-            <section class="noselect">
-              <header>
-               <code>software engineer</code>
-              </header>
-              <h1>segun <br>akanbi</h1>
-              <a href="#page-8">
-                <button onclick="window.scrollTo(null, document.body.scrollHeight)">contact me</button>
-              </a>
-            </section>
-          </div>
-          <div class="hero-image">
-            <img src="./assets/images/hero-image.png">
-            <div class="water-mark"></div>
-          </div>
-        </div>
-        <div class="navigator" style="text-align: center; margin-top: -150px">
-          <img src="./assets/images/navigation-down.png">
-        </div>
+    </nav>
+    <div id="wrapper">
+      <div id="intro">
+        <h1 id="greeting"></h1>
+        <p id="name" style="font-family: none;">I&apos;m Segun, a freelancer.</p>
+        <small>
+          I love hacking with the computer.
+          To learn more about me, visit my <a href="./portfolio.html">portfolio</a> page.
+        </small>
       </div>
-
-      <main id="code-main">
-        <!-- PAGE 2-->
-        <section id="page-2" data-anchor="Page 2">
-          <div class="page-2 segment section noselect">
-            <section class="objective">
-              <h1></h1>
-              <p>
-                A purpose-driven individual with strong motivation to make planet earth a better place. <br>
-                As a technology enthusiast having keen interest in problem solving, I am passionate about providing solutions to business problems.
-                I look out for opportunities to work with like minds, being passionate, hardworking, and zealous with aspirations to work with a multinational firm that allows space for growth, learning and improvement, using skills, talent and experience to solve problems in a creative and effective manner, being constantly dynamic and versatile with cutting edge technologies. Finally, implementing information technology for the betterment of the world.
-              </p>
-            </section>
-            <section class="languages">
-              <h1>languages</h1>
-              <ul>
-                <li>english (<i>fluent</i>)</li>
-                <li>yoruba (<i>native</i>)</li>
-                <li>french (<i>beginner</i>)</li>
-              </ul>
-            </section>
-          </div>
-        </section>
-
-        <!-- PAGE 3-->
-        <section id="page-3">
-          <div class="page-3 segment section noselect">
-            <section class="experience">
-              <h1>experience</h1>
-              <small>Ash Nelson Partners Ltd​.</small>
-              <header>backend engineer</header>
-              <p>
-                <ash>#</ash> Contributed software engineering expertise in the development of products
-                using Agile methodologies, from requirements definition through successful
-                deployment. <br>
-                <ash>#</ash> Built and deployed microservices and integrated them into existing solutions. <br>
-                <ash>#</ash> Technologies I worked with include AWS, Bitbucket, Jira, Python
-                and JavaScript.
-              </p>
-              <br/>
-
-              <small>TopStep Solutions Ltd.​</small>
-              <header>fullstack engineer</header>
-              <p>
-                <ash>#</ash> Developed bespoke and fully customized applications, working seemlessly with
-                best practices that enhanced product definition. <br>
-                <ash>#</ash> Collaborated with development teams and product managers to ideate software solutions.   
-              </p>
-            </section>
-            <section class="skills">
-              <div class="water-mark"></div>
-              <h1>skills</h1>
-              <ul>
-                <li>ui/ux</li>
-                <li>project management</li>
-                <li>product design</li>
-                <li>software architecture</li>
-                <li>digital marketing</li>
-                <li>branding</li>
-              </ul>
-            </section>
-          </div>
-        </section>
-
-        <!-- PAGE 4-->
-        <section id="tab-experience">
-          <div class="page-4 segment section noselect">
-            <section class="experience">
-              <small>Andela</small>
-              <header>Software Development Bootcamp</header>
-              <p>
-                <ash>#</ash> Built a functional web application using no web framework or UI libraries. <br>
-                <ash>#</ash> Designed complex APIs using Agile methodologies. <br>
-                <ash>#</ash> Acquired professional work ethics and embodied core values.
-              </p>
-              <br/>
-
-              <small>HiiT Plc</small>
-              <header>Web Development Intern</header>
-              <p>
-                <ash>#</ash> Acquired basic frontend skills for Mobile/Web Development. <br>
-                <ash>#</ash> Learned Graphic Design tools for Application development. <br>
-                <ash>#</ash> Designed static websites using modern web technologies. <br> 
-                <ash>#</ash> Acquired Customer relation and representative skills. <br> 
-              </p>
-            </section>
-          </div>
-        </section>
-
-        <!-- PAGE 5-->
-        <section id="tab-interests">
-          <div class="page-5 segment section noselect">
-            <section>
-              <small>Hallmark Ventures​</small>
-              <header>network & systems engineer</header>
-              <p>
-                <ash>#</ash> Installed, configured, tested and maintained operating systems, application software and system management tools. <br>
-                <ash>#</ash> Managed and supervised business operations. <br>
-                <ash>#</ash> Maintain security, backup, and redundancy strategies. <br>
-                <ash>#</ash> Manage and monitor all installed systems and infrastructure.
-
-              </p>
-            </section>
-            <section class="int-skill__list">
-              <section class="interests">
-                <h1>interests</h1>
-                <ul>
-                  <li>teaching</li>
-                  <li>music</li>
-                  <li>sports</li>
-                  <li>pencil rendering</li>
-                  <li>skydiving</li>
-                  <li>reading</li>
-                </ul>
-              </section>
-              <section class="skills">
-              <h1>skills</h1>
-              <ul>
-                <li>ui/ux</li>
-                <li>project management</li>
-                <li>product design</li>
-                <li>software architecture</li>
-                <li>digital marketing</li>
-                <li>branding</li>
-              </ul>
-            </section>
-          </section>
-          </div>
-        </section>
-
-        <!-- PAGE 6-->
-        <section id="page-6">
-          <div class="page-6 segment section noselect">
-            <section class="projects">
-              <div class="water-mark"></div>
-              <h1>Projects</h1>
-              <p>I've worked on a few projects, both independently and also with a team.
-              <div class="project-list">
-                <div class="card project-1">
-                  <div class="card-image" style="background-size: contain;"></div>
-                  <div class="card-body">
-                    <small>A food ordering application integrated into an existing website.<br/><i>crunchiesfriedchickenltd.com</i></small>
-                    <div class="card-actions">
-                      <button onclick="redirect('https://crunchies.herokuapp.com')">View Site</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card project-2">
-                  <div class="card-image" style="background-size: contain;"></div>
-                  <div class="card-body">
-                    <small>A light-weight banking application built using vanilla JavaScript (No frameworks, no ORMs, no UI library).</small>
-                    <div class="card-actions">
-                      <button onclick="redirect('https://github.com/Shegsdev/Banka')">View Source</button>
-                      <button onclick="redirect('https://shegsdev.github.io/Banka')">View Site</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card project-3">
-                  <div class="card-image"></div>
-                  <div class="card-body">
-                    <small>What movie are you planning to see this weekend? Check in to get more details about the show. </small>
-                    <div class="card-actions">
-                      <button onclick="redirect('https://github.com/Shegsdev/react-spa')">View Source</button>
-                      <button onclick="redirect('http://mazemovies.herokuapp.com/')">View Site</a></button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card project-4">
-                  <div class="card-image"></div>
-                  <div class="card-body">
-                    <small>Official website for Neural Technologies LLC. (neuraltechx) <br/> <mark><i>This is proprietary application</i></mark></small>
-                    <div class="card-actions">
-                      <button onclick="redirect('https://www.neuraltechx.com')">View Site</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-              
-          </div>
-        </section>
-
-        <!-- PAGE 7-->
-        <!-- <section id="tab-posts">
-          <div class="page-7 segment section noselect">
-            <section class="posts">
-              <h1>Posts</h1>
-              <ul>
-                <li>Article 1</li>
-                <li>Article 2</li>
-                <li>Article 3</li>
-              </ul>
-            </section>
-              
-          </div>
-        </section> -->
-
-        <!-- PAGE 8-->
-        <section id="tab-contact">
-          <div class="page-8 segment section footer">
-            <section class="contact" id="contact">
-              <h1>contact</h1>
-              <small>Reach out to me via email:</small>
-              <a href="mailto:akanbisegun1@gmail.com">
-                <mark><i>akanbisegun1@gmail.com</i></mark>
-              </a>
-              <p>OR</p>
-              <h3><small>Call: </small>+234 906 954 0681</h3>
-              <a href="mailto:akanbisegun1@gmail.com">
-                <button>contact me</button>
-              </a>
-
-              <p>Let's connect on social media.</p>
-              <div class="socials">
-                <a href="https://twitter.com/shegsdev">
-                  <img src="./assets/images/twitter.png">
-                </a>
-                <a href="https://instagram.com/shegsdev">
-                  <img src="./assets/images/instagram.png">
-                </a>
-                <a href="https://www.linkedin.com/in/akanbi-s/">
-                  <img src="./assets/images/linkedin.png">
-                </a>
-                
-              </div>
-            </section>
-          </div>
-        </section>
-
-      </main>
-    </div>    
+      <div>
+        <!-- Image credit: undraw.co -->
+        <img src="./assets/images/undraw_startup_life.svg" width="80%">
+      </div>      
+    </div>
 
     <script>
+      let i = 0;
+      const text = 'Hi there!';
+      const speed = 100; /* The speed/duration of the effect in milliseconds */
 
-      // handle external urls
-      function redirect(url) {
-	return window.open(url, '_blank')
+      function typeWriter() {
+        if (i < text.length) {
+          document.getElementById("greeting").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
       }
-    </script>
 
-    <script src="./assets/js/jquery.min.js"></script>
-    <script>
-      <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
-      $(document).ready(function() {
-        $(document).delegate('.open', 'click', function(event){
-            $(this).addClass('oppenned');
-            event.stopPropagation();
-        })
-        $(document).delegate('body', 'click', function(event) {
-            $('.open').removeClass('oppenned');
-        })
-        $(document).delegate('.cls', 'click', function(event){
-            $('.open').removeClass('oppenned');
-            event.stopPropagation();
-        });
-        $(document).delegate('.ham_link', 'click', function(event){
-            $('.open').removeClass('oppenned');
-            event.stopPropagation();
-        });
-    });
+      document.addEventListener("DOMContentLoaded", typeWriter);
     </script>
-    
-
   </body>
 </html>
