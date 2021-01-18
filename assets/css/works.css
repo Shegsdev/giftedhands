@@ -1,0 +1,67 @@
+/*
+** Under the Creative Commons License
+** @author Segun Akanbi
+*/
+
+html {
+	scroll-behavior: smooth;
+	transition: all 0.5s;
+}
+body {
+	font-size: 16px;
+	margin: 0;
+	font-family: 'Montserrat';
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:visited {
+	color: inherit;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 30px;
+}
+#container {
+	
+}
+.back-arrow {
+	cursor: pointer;
+	font-size: 18px;
+	display: flex;
+	place-items: center;
+}
+.back-arrow img {
+	opacity: 0.8;
+	width: 2%;
+	transform: rotate(90deg);
+}
+footer .scroll-to-top {
+	box-shadow: 1px 1px 8px 1px #999;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	padding: 12px;
+	place-items: center;
+	height: 45px;
+	width: 45px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+footer .scroll-to-top img {
+	opacity: 0.8;
+	width: 2em;
+	transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+}
+@media (max-width: 480px) {
+	.back-arrow img, footer .scroll-to-top img {
+		width: 6%;
+	}
+}

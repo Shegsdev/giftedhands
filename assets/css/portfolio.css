@@ -16,6 +16,9 @@ body {
 ul {
 	list-style-type: circle;
 }
+button:hover {
+	box-shadow: 2px 6px 6px #00000029;
+}
 mark {
 	background-color: #fff;
 }
@@ -44,7 +47,7 @@ mark {
 	background-color: #fff;
 	box-shadow: 2px 2px 2px #9fc6f3;
 	border: none;
-	border-radius: 25px;
+	border-radius: 15px;
 	color: #000;
 	cursor: pointer;
 	font-family: 'Montserrat';
@@ -115,7 +118,7 @@ mark {
 .hero button, .footer button {
 	background: #3276c3;
 	border: none;
-	border-radius: 25px;
+	border-radius: 15px;
 	cursor: pointer;
 	font-family: Montserrat;
 	font-weight: 600;
@@ -185,6 +188,7 @@ section.projects .water-mark {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 1em;
+	margin-bottom: 1em;
 }
 .project-list .card-image {
 	background-size: cover;
@@ -225,11 +229,17 @@ section.projects .water-mark {
 	text-align: left;
 }
 .contact img {
-	margin-right: 18px;
 	width: 8%;
 }
 .contact a {
 	text-decoration: none;
+}
+.socials {
+	display: inline;
+	margin-right: 20px;
+}
+.socials img:hover {
+	transform: scale(1.08);
 }
 
 ash {

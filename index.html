@@ -63,6 +63,14 @@
 
         }
       }
+      @media (max-width: 320px) {
+        #wrapper #intro {
+          padding: 20px;
+        }
+        #wrapper h1 {
+          font-size: 48px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -72,15 +80,15 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./comingsoon.html">Blog</a></li>
-          <li><a href="./portfolio.html">Works</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./works.html">Works</a></li>
         </ul>
       </div>
     </nav>
     <div id="wrapper">
       <div id="intro">
         <h1 id="greeting"></h1>
-        <p id="name" style="font-family: none;">I&apos;m Segun, a freelancer.</p>
+        <p id="name" style="font-family: 'Times New Romans';">I&apos;m Segun, a freelancer.</p>
         <small>
           I love hacking with the computer.
           To learn more about me, visit my <a href="./portfolio.html">portfolio</a> page.
@@ -95,7 +103,7 @@
     <script>
       let i = 0;
       const text = 'Hi there!';
-      const speed = 100; /* The speed/duration of the effect in milliseconds */
+      const speed = 130; /* The speed/duration of the effect in milliseconds */
 
       function typeWriter() {
         if (i < text.length) {

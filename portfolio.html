@@ -217,6 +217,7 @@
                   <div class="card-body">
                     <small>A food ordering application integrated into an existing website.<br/><i>crunchiesfriedchickenltd.com</i></small>
                     <div class="card-actions">
+                      <a href="./works.html"><button>Learn more</button></a>
                       <button onclick="redirect('https://crunchies.herokuapp.com')">View Site</button>
                     </div>
                   </div>
@@ -226,7 +227,7 @@
                   <div class="card-body">
                     <small>A light-weight banking application built using vanilla JavaScript (No frameworks, no ORMs, no UI library).</small>
                     <div class="card-actions">
-                      <button onclick="redirect('https://github.com/Shegsdev/Banka')">View Source</button>
+                      <a href="./works.html"><button>Learn more</button></a>
                       <button onclick="redirect('https://shegsdev.github.io/Banka')">View Site</button>
                     </div>
                   </div>
@@ -236,7 +237,7 @@
                   <div class="card-body">
                     <small>What movie are you planning to see this weekend? Check in to get more details about the show. </small>
                     <div class="card-actions">
-                      <button onclick="redirect('https://github.com/Shegsdev/react-spa')">View Source</button>
+                      <a href="./works.html"><button>Learn more</button></a>
                       <button onclick="redirect('http://mazemovies.herokuapp.com/')">View Site</a></button>
                     </div>
                   </div>
@@ -247,7 +248,20 @@
                     <small>Official website for Neural Technologies LLC. (neuraltechx).</small> <br>
                     <small>A technology company.</small>
                     <div class="card-actions">
+                      <a href="./works.html"><button>Learn more</button></a>
                       <button onclick="redirect('https://www.neuraltechx.com')">View Site</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-list">
+                <div class="card project-5">
+                  <div class="card-image" style="background-size: contain;"></div>
+                  <div class="card-body">
+                    <small>A sub brand of Odun Group of companies.<br/><i>odungroup.com</i></small>
+                    <div class="card-actions">
+                      <a href="./works.html"><button>Learn more</button></a>
+                      <button onclick="redirect('https://odunenvironmental.com')">View Site</button>
                     </div>
                   </div>
                 </div>
@@ -279,7 +293,7 @@
               <h1>contact</h1>
               <p style="display: inline-block;padding-right: 0">Reach out to me via email:</p>
               <a href="mailto:akanbisegun1@gmail.com">
-                <mark><small>akanbisegun1@gmail.com</small></mark>
+                <small><i><u>akanbisegun1@gmail.com</u></i></small>
               </a>
               <p>OR</p>
               <h3><small>Call: </small>+234 906 954 0681</h3>
@@ -288,15 +302,21 @@
               </a>
 
               <p>Let's connect on social media.</p>
+              <div class="socials">
                 <a href="https://twitter.com/shegsdev">
                   <img src="./assets/images/twitter.png">
                 </a>
+              </div>
+              <div class="socials">
                 <a href="https://instagram.com/shegsdev">
                   <img src="./assets/images/instagram.png">
                 </a>
+              </div>
+              <div class="socials">
                 <a href="https://www.linkedin.com/in/akanbi-s/">
                   <img src="./assets/images/linkedin.png">
                 </a>
+              </div>
             </section>
           </div>
         </section>
@@ -318,26 +338,7 @@
     </script>
 
     <script src="./assets/js/jquery.min.js"></script>
-    <script>
-      <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
-      $(document).ready(function() {
-        $(document).delegate('.open', 'click', function(event){
-            $(this).addClass('oppenned');
-            event.stopPropagation();
-        })
-        $(document).delegate('body', 'click', function(event) {
-            $('.open').removeClass('oppenned');
-        })
-        $(document).delegate('.cls', 'click', function(event){
-            $('.open').removeClass('oppenned');
-            event.stopPropagation();
-        });
-        $(document).delegate('.ham_link', 'click', function(event){
-            $('.open').removeClass('oppenned');
-            event.stopPropagation();
-        });
-    });
-    </script>
+    <script src="./assets/js/partials.js"></script>
     
 
   </body>

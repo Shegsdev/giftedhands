@@ -52,6 +52,9 @@
 	.contact a {
 		margin: 30px;
 	}
+	.socials {
+		margin-right: 0;
+	}
 }
 
 @media (max-width: 890px) {
