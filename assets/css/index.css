@@ -11,7 +11,6 @@ body {
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,118,195,0.981127485173757) 35%, rgba(0,212,255,1) 100%);
 	font-size: 16px;
-	height: 100vh;
 	margin: 0;
 	font-family: 'Montserrat';
 }
@@ -43,8 +42,7 @@ ul {
 	align-items: center;
 }
 #wrapper #intro {
-	position: relative;
-	left: 20%;
+	margin-left: 20%;
 }
 #wrapper h1 {
 	border-right: 1px solid #9c9ca1;
