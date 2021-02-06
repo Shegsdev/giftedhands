@@ -12,6 +12,11 @@ body {
 	margin: 0;
 	font-family: 'Montserrat';
 }
+p {
+	color: #2f2f2f;
+	font-size: 18px;
+	line-height: 2em;
+}
 a {
 	color: inherit;
 	text-decoration: none;
@@ -24,18 +29,81 @@ nav {
 	justify-content: space-between;
 	padding: 16px 30px;
 }
-#container {
-	
+.container {
+	padding: 3em;
 }
+.divider {
+	border: 1px solid lightgrey;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	width: 90%;
+}
+.container .content .grid {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	gap: 4em;
+	margin: 60px auto;
+}
+.container .header {
+	color: #2f2f2f;
+	font-family: 'Trebuchet MS';
+	letter-spacing: -5px;
+}
+.container .header.project_title {
+	font-size: 78px;
+}
+.container .header.sub_heading {
+	color: #656565;
+	font-size: 54px;
+}
+.content .project_summary p {
+	margin: 0;
+	text-align: justify;
+}
+.content .showcase {
+	/*text-align: right;*/
+}
+.content .showcase img {
+	border: 1px solid #ddd;
+	border-radius: 7px;
+	box-shadow: 1px 1px 8px 1px #999;
+	padding: 15px;
+}
+.gallery {
+	display: flex;
+	justify-content: space-between;
+}
+.gallery img {
+	width: 50%;
+}
+.showcase4__gallery {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 50px auto;
+}
+.showcase4__gallery img {
+	width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
 .back-arrow {
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 24px;
 	display: flex;
 	place-items: center;
 }
 .back-arrow img {
 	opacity: 0.8;
-	width: 2%;
+	width: 3%;
 	transform: rotate(90deg);
 }
 footer .scroll-to-top {
@@ -58,10 +126,55 @@ footer .scroll-to-top img {
 	transform: rotate(180deg);
 }
 
+@media (max-width: 1350px) {
+	.container .content .grid {
+		display: block;
+	}
+}
 @media (max-width: 992px) {
+	.container {
+		padding: 2em;
+	}
+	.container .content .grid {
+		margin: 0;
+	}
+	.container .header.project_title {
+		font-size: 58px;
+	}
+	.container .header.sub_heading {
+		font-size: 34px;
+	}
+	.content .showcase img {
+		padding: 0;
+		width: 100%;
+	}
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+	.gallery img {
+		width: 100% !important;
+	}
+	.laptop_mockup img {
+		width: 100%;
+	}
+	.divider {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	.showcase3__gallery div {
+		display: block !important;
+		margin: auto;
+		width: 50% !important;
+	}
+	.showcase3__gallery img {
+		float: none !important;
+		margin: 0 !important;
+		width: 100% !important;
+	}
 }
 @media (max-width: 480px) {
-	.back-arrow img, footer .scroll-to-top img {
+	.back-arrow img {
 		width: 6%;
 	}
 }
