@@ -45,7 +45,6 @@ mark {
 }
 .card button {
 	background-color: #fff;
-	box-shadow: 2px 2px 2px #9fc6f3;
 	border: none;
 	border-radius: 15px;
 	color: #000;
@@ -58,13 +57,12 @@ mark {
 	color: inherit;
 	text-decoration: none;
 }
-.card button:hover {
-	background: #3276c3;
-	color: #fff;
-}
 .card-actions button:first-child {
 	background: #3276c3;
-        color: #fff;
+    color: #fff;
+}
+.card button:hover {
+	box-shadow: 2px 2px 2px #ddd;
 }
 #container {
 	overflow: hidden;
@@ -209,10 +207,13 @@ section.projects .water-mark {
 	background-image: url("../images/banka.png");
 }
 .project-list .project-3 .card-image {
-	background-image: url("../images/movies.jpg");
+	background-image: url("../images/movies.png");
 }
 .project-list .project-4 .card-image {
 	background-image: url("../images/neuraltechx.png");
+}
+.project-list .project-5 .card-image {
+	background-image: url("../images/odun.png");
 }
 .footer {
 	background-color: #3276c3;
@@ -232,7 +233,11 @@ section.projects .water-mark {
 	width: 8%;
 }
 .contact a {
+	color: darkblue;
 	text-decoration: none;
+}
+.contact a:hover {
+	color: blue;
 }
 .socials {
 	display: inline;
