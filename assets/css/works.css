@@ -14,7 +14,7 @@ body {
 }
 p {
 	color: #2f2f2f;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 2em;
 }
 a {
@@ -61,7 +61,7 @@ nav {
 	text-align: justify;
 }
 .content .showcase {
-	/*text-align: right;*/
+	text-align: center;
 }
 .content .showcase img {
 	border: 1px solid #ddd;
@@ -138,6 +138,10 @@ footer .scroll-to-top img {
 	.container .content .grid {
 		margin: 0;
 	}
+	.container .header {
+		letter-spacing: -2px;
+		margin: 20px 0;
+	}
 	.container .header.project_title {
 		font-size: 58px;
 	}
@@ -145,6 +149,7 @@ footer .scroll-to-top img {
 		font-size: 34px;
 	}
 	.content .showcase img {
+		margin: 20px auto;
 		padding: 0;
 		width: 100%;
 	}
@@ -171,6 +176,14 @@ footer .scroll-to-top img {
 		float: none !important;
 		margin: 0 !important;
 		width: 100% !important;
+	}
+	.showcase4__gallery {
+		flex-direction: column;
+		width: 50%;
+	}
+	.showcase4__gallery img {
+		margin-bottom: 30px;
+		width: 100%;
 	}
 }
 @media (max-width: 480px) {
