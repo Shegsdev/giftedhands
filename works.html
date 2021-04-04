@@ -25,21 +25,35 @@
   </head>
   <body>
     <div id="main">
-      <nav>
-        <div class="back-arrow" onclick="history.back()">
-          <img src="./assets/images/navigation-down.png" />
-          <figcaption>Back</figcaption>
-        </div>
-      </nav>
+      <header id="top_header">
+        <nav style="display: inline-block;">
+          <div class="back-arrow" onclick="history.back()" style="display: inline;">
+            <img src="./assets/images/navigation-down.png"/>
+            <!-- <figcaption>Back</figcaption> -->
+          </div>
+        </nav>
+
+        <aside>
+          <ul>
+            <li style="color: rgb(0, 124, 195)"><a href="#banka">Banka</a></li>
+            <li><a href="#crunchies">Crunchies</a></li>
+            <li><a href="#mazemovies">Maze Movies</a></li>
+            <li><a href="#neuraltechx">Neuraltechx</a></li>
+          </ul>
+        </aside>
+      </header>
+
+      <div>
+        <h1 style="text-align: center; font-size: 68px">Coming Soon...</h1>
+      </div>
 
       <!-- PROJECT SHOWCASE 1: Banka -->
-      <div class="wrapper">
+      <!--<div class="wrapper" id="banka">
         <div class="container">
           <header class="header project_title">Banka</header>
           <div class="content">
             <div class="grid">
-              <div class="project_summary">
-                <!-- <img src="./assets/images/banka.png" alt="banka-logo"> -->
+            <div class="project_summary">
                 <p><strong>Write about the project, the thought process about the design, the problem it solves and every of its features. Include all of the technologies used while developing the project; the choice of font and why, color palette etc. What can this software do? How can it be used? How can it be installed?</strong>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -52,9 +66,9 @@
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur.</p>
               </div>
-              <div class="showcase">
+              <div class="" style="text-align: center">
                 <img
-                  src="./assets/images/banka_desktop_dashboard1.png" alt="banka-dashboard1"
+                  src="./assets/images/banka_mobile.png" alt="banka-mobile"
                   style="width: 100%"
                 />
               </div>
@@ -75,12 +89,12 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div style="text-align: center; margin-top: 50px;">
-            <img
-              src="./assets/images/banka_desktop_landing1.png" alt="banka-landing1"
-              style="border-radius: 7px; width: 100%;"
-            />
-          </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px;">
+          <img
+            src="./assets/images/banka_desktop_landing1.png" alt="banka-landing1"
+            style="border-radius: 7px; width: 100%;"
+          />
         </div>
         <div class="gallery">
           <img src="./assets/images/banka_desktop_login1.png" />
@@ -93,9 +107,6 @@
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div style="text-align: center; margin-top: 50px;" class="laptop_mockup">
-          <img src="./assets/images/banka_desktop_landing2.png" alt="banka-landing2" />
         </div>
 
         <div class="container">
@@ -121,12 +132,12 @@
             />
           </div>
         </div>
-      </div> <!-- END PROJECT SHOWCASE 1 -->
+      </div> --> <!-- END PROJECT SHOWCASE 1 -->
 
       <hr class="divider" />
 
       <!-- PROJECT SHOWCASE 2: Crunchies Restaurant -->
-      <div class="wrapper">
+      <!--<div class="wrapper" id="crunchies">
         <div class="container">
           <header class="header project_title">Crunchies Restaurant</header>
           <div class="content">
@@ -137,18 +148,13 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="showcase">
-                <img src="./assets/images/crunchies_outlet.jpg" alt="crunchies_outlet" />
+                <img
+                  src="./assets/images/crunchies_outlet.jpg" alt="crunchies_outlet"
+                  style="width: 100%"
+                />
               </div>
             </div>
           </div>
@@ -172,12 +178,12 @@
           <img src="./assets/images/crunchies_mobile1.png" />
           <img src="./assets/images/crunchies_mobile2.png" />
         </div>
-      </div> <!-- END PROJECT SHOWCASE 2 -->
+      </div> --> <!-- END PROJECT SHOWCASE 2 -->
 
       <hr class="divider" />
 
       <!-- PROJECT SHOWCASE 3: TV Maze -->
-      <div class="wrapper">
+      <!--<div class="wrapper" id="mazemovies">
         <div class="container">
           <header class="header project_title">Maze Movies</header>
           <div class="content">
@@ -222,21 +228,21 @@
         <div class="container showcase3__gallery">
           <img
             src="./assets/images/tvmaze_desktop2.png" alt="tvmaze_desktop2"
-            style="width: 69%; float: left; margin-top: 40px;"
+            style="width: 69%; float: left;"
           />
-          <div style="display: inline-block; width: 29%; text-align: right;">
+          <div style="display: inline-block; width: 29%; text-align: center;">
             <img
               src="./assets/images/mazemovies_iPhone.png" alt="mazemovies_iPhone"
-              style="width: auto;"
+              style="width: 60%;"
             />
           </div>
         </div>
-      </div> <!-- END PROJECT SHOWCASE 3 -->
+      </div> --> <!-- END PROJECT SHOWCASE 3 -->
 
       <hr class="divider" />
 
             <!-- PROJECT SHOWCASE 4: Neuraltechx -->
-      <div class="wrapper">
+      <!--<div class="wrapper" id="neuraltechx">
         <div class="container">
           <header class="header project_title">Neuraltechx</header>
           <div class="content">
@@ -247,20 +253,12 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="showcase">
                 <img
                   src="./assets/images/neuraltechx.png" alt="neuraltechx"
-                  style="width: 85%;"
+                  style="width: 100%;"
                 />
               </div>
             </div>
@@ -280,8 +278,8 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-        </div> <!-- END CONTAINER -->
-        <div>
+        </div> --><!-- END CONTAINER -->
+        <!--<div>
           <img
             src="./assets/images/neuraltechx_desktop_landing1.png" alt="neuraltechx-landing1"
             style="width: 100%;"
@@ -305,7 +303,7 @@
           <img src="./assets/images/neuraltechx_mobile1.png" alt="neuraltechx_mobile1" />
           <img src="./assets/images/neuraltechx_mobile2.png" alt="neuraltechx_mobile2" />
         </div>
-      </div> <!-- END PROJECT SHOWCASE 4 -->
+      </div> -->  <!-- END PROJECT SHOWCASE 4 -->
       
     <footer>
       <div class="scroll-to-top" onclick="window.scrollTo(null, 0)">
