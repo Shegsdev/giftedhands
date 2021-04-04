@@ -12,7 +12,7 @@ body {
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,118,195,0.981127485173757) 35%, rgba(0,212,255,1) 100%);
 	font-size: 16px;
 	margin: 0;
-	font-family: 'Montserrat';
+	font-family: 'Trebuchet MS';
 }
 a {
 	color: inherit;
@@ -47,7 +47,7 @@ ul {
 #wrapper h1 {
 	border-right: 1px solid #9c9ca1;
 	color: #d6d6d6;
-	font-size: 81px;
+	font-size: 69px;
 	display: inline-block;
 	margin: 0;
 	padding-right: 8px;
