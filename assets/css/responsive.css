@@ -60,24 +60,30 @@
 @media (max-width: 890px) {
 	.navigator img {
 		opacity: 0.25;
-		width: 10%;
+		width: 12%;
 	}
 	.segment {
 		padding: 25px;
 	}
-  .hero .hero-text {
-		margin: 80px 20px;
+	.hero-wrapper {
+		justify-content: space-around;
 	}
-  section .segment {
-  	margin: 0;
-  }
-  .segment p, .segment li {
+  	.hero .hero-text {
+	  	display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+			margin: 0;
+		}
+	section .segment {
+	  margin: 0;
+	}
+  	.segment p, .segment li {
 		line-height: 2em;
 		padding: 0;
 		text-align: left;
 	}
 	.projects .project-list {
-    grid-template-columns: repeat(2, 1fr);
+    	grid-template-columns: repeat(2, 1fr);
 	}
 	.contact {
 		display: block;
@@ -110,9 +116,6 @@
 @media (max-width: 340px) {
 	body {
 		font-size: 14px;
-	}
-	.navigator img {
-		width: 18%;
 	}
 	.segment {
 		margin: 15px;
