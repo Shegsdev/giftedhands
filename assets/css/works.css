@@ -148,6 +148,9 @@ footer .scroll-to-top img {
 	#top_header {
 		padding-left: 100px;
 	}
+	aside {
+		padding-right: 0;
+	}
 	.container {
 		padding: 0 100px;
 	}

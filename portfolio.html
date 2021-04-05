@@ -53,6 +53,7 @@
           <span class="cls"></span>
       </div>
 
+      <header class="hero-wrapper">
         <div class="hero">
           <div class="hero-text">
             <section class="noselect">
@@ -70,9 +71,10 @@
             <div class="water-mark"></div>
           </div>
         </div>
-        <div class="navigator" style="text-align: center; margin-top: -150px">
+        <div class="navigator" style="text-align: center;">
           <img src="./assets/images/navigation-down.png">
         </div>
+      </header>
       </div>
 
       <main id="code-main">
@@ -121,7 +123,7 @@
               <p>
                 <ash>#</ash> I contributed my expertise to developing a sentiment-based Brand Reputation and Performance system. <br/>
                 <ash>#</ash> Programmed a script for an ETL pipeline using AWS.<br/>
-                <small><em>My greatest achievement was building a Web Crawler (an application that searches the web for a specific/related data, pulls that data and stores it for further use) from ground up.</em></small>
+                <small><em>My greatest achievement was building and maintaining a Web Crawler (an application that searches the web for a specific/related data, pulls that data and stores it for further use) from ground up.</em></small>
               </p>
 
               <header>Technologies used:</header>
@@ -309,8 +311,8 @@
             <section class="contact" id="contact">
               <h1>contact</h1>
               <p style="display: inline-block;padding-right: 0">Reach out to me via email:</p>
-              <a href="mailto:shegsdev@gmail.com">
-                <small><i><u>shegsdev@gmail.com</u></i></small>
+              <a href="mailto:akanbisegun1@gmail.com">
+                <small><i><u>akanbisegun1@gmail.com</u></i></small>
               </a>
               <p>OR</p>
               <h3><small>Call: </small>+234 906 954 0681</h3>
@@ -344,7 +346,7 @@
     <script>
 
       document.addEventListener("DOMContentLoaded", function() {
-        let hero = document.querySelector('.hero');
+        let hero = document.querySelector('.hero-wrapper');
         hero.style.height = `${window.innerHeight}px`;
       });
 
