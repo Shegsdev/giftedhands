@@ -86,11 +86,7 @@ mark {
 .hero .hero-text {
 	margin: 160px 0 0 160px;
 }
-.hero-image {
-	position: relative;
-	text-align: right;
-}
-.hero-image .water-mark {
+/*.hero-image .water-mark {
 	background: #03a9f473;
 	border-radius: 50%;
 	mix-blend-mode: hue;
@@ -100,12 +96,13 @@ mark {
 	position: absolute;
 	right: -150px;
 	top: -230px;
-}
+}*/
 .hero-image img {
-	filter: grayscale(80%);
-  -webkit-filter:grayscale(80%);
+	border-radius: 28%;
+	/*filter: grayscale(80%);
+  -webkit-filter:grayscale(80%);*/
 	margin-top: 120px;
-	width: 100%;
+	width: 50%;
 }
 .hero-text header {
 	font-family: 'Fira Code light', monospace;
@@ -294,7 +291,7 @@ section.testimonials {
 /*Hamburger*/
 .open {
 	border-radius: 50%;
-	box-shadow: 1px 1px 8px 1px #999;
+	box-shadow: 1px 1px 3px 0px #999;
 	 position: fixed;
 	 top: 40px;
 	 right: 40px;

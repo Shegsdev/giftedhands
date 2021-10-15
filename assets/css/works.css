@@ -24,7 +24,7 @@ a:visited {
 	color: inherit;
 }
 #top_header {
-	padding-left: 200px;
+	padding: 0 100px;
 }
 nav {
 	display: flex;
@@ -34,7 +34,6 @@ nav {
 aside {
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 200px;
 }
 aside ul {
 	display: inline-block;
@@ -55,8 +54,11 @@ aside ul li:hover {
 	margin-bottom: 5em;
 	width: 90%;
 }
+.center {
+	text-align: center;
+}
 .container {
-	padding: 0 200px;
+	padding: 0 100px;
 }
 .container .content .grid {
 	display: flex;
@@ -76,7 +78,7 @@ aside ul li:hover {
 	font-size: 30px;
 }
 .content .project_summary {
-	padding-right: 120px;
+	padding-right: 60px;
 }
 .content .project_summary p {
 	margin: 0;
@@ -87,7 +89,7 @@ aside ul li:hover {
 }
 .content .showcase img {
 	border-radius: 7px;
-	box-shadow: 1px 1px 8px 1px #999;
+	box-shadow: 1px 1px 15px 1px #999;
 }
 .gallery {
 	display: flex;
@@ -119,7 +121,7 @@ aside ul li:hover {
 	transform: rotate(90deg);
 }
 footer .scroll-to-top {
-	box-shadow: 1px 1px 8px 1px #999;
+	box-shadow: 1px 1px 3px 0px #999;
 	border-radius: 50%;
 	cursor: pointer;
 	display: flex;
@@ -146,7 +148,7 @@ footer .scroll-to-top img {
 		padding-left: 20px;
 	}
 	#top_header {
-		padding-left: 100px;
+		padding: 0 100px;
 	}
 	aside {
 		padding-right: 0;
@@ -227,7 +229,7 @@ footer .scroll-to-top img {
 }
 @media (max-width: 480px) {
 	#top_header {
-		padding-left: 0;
+		padding: 0;
 	}
 	p {
 		line-height: 2em;
