@@ -12,7 +12,7 @@ body {
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,118,195,0.981127485173757) 35%, rgba(0,212,255,1) 100%);
 	font-size: 16px;
 	margin: 0;
-	font-family: 'Trebuchet MS';
+	font-family: 'Trebuchet MS', sans-serif;
 }
 a {
 	color: inherit;
