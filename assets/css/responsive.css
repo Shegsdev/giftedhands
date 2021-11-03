@@ -160,14 +160,14 @@
 @media (max-width: 680px) {
 	/*Hamburger*/
 	.open {
-		background: #d4d4d4;
+		background: #fff;
 		top: 30px;
 		right: 30px;
 	 	width: 60px;
 	 	height: 60px;
 	}
 	.open span {
-		background-color: #fff;
+		background-color: #999;
 		right: 15px;
 		top: 5px;
 	}
