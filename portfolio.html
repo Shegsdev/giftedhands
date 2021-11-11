@@ -23,6 +23,22 @@
       gtag('config', 'UA-155071079-1');
     </script>
 
+    <style>
+      .loader {
+        border: 3px solid #f3f3f3; /* Light grey */
+        border-top: 3px solid #3276c3; /* Blue */
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+
   </head>
   <body>
     <div id="container">
@@ -361,9 +377,35 @@ As a technology enthusiast having a keen interest in problem-solving, I am passi
 
     <script>
 
+      const pageContent = document.querySelector('#container')
+      function renderLoader() {
+        pageContent.style.display = "none";
+        const loader = document.createElement("div");
+        loader.setAttribute("class", "loader");
+        const loaderText = document.createElement("small");
+        loaderText.innerHTML = "loading...";
+        const loaderContainer = document.createElement("div");
+        loaderContainer.style.display = "flex";
+        loaderContainer.style.justifyContent = "center";
+        loaderContainer.style.alignItems = "center";
+        loaderContainer.style.marginTop = "300px";
+        loaderContainer.style.gap = "1em";
+        loaderContainer.append(loader);
+        loaderContainer.append(loaderText);
+
+        document.body.append(loaderContainer);
+        setTimeout(() => {
+          if (document.readyState == 'complete') {
+            document.body.removeChild(loaderContainer);
+            pageContent.style.display = "block";
+          }
+        }, 1000)
+      }
+
       document.addEventListener("DOMContentLoaded", function() {
         let hero = document.querySelector('.hero-wrapper');
         hero.style.height = `${window.innerHeight}px`;
+        renderLoader()
       });
 
       // handle external urls
