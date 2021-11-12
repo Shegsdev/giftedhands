@@ -379,22 +379,22 @@ section.testimonials {
 	 text-transform: uppercase;
 	 text-decoration: none;
 }
- .oppenned .sub-menu {
+ .opened .sub-menu {
 	 opacity: 1;
 	 height: 600px;
 	 width: 600px;
 }
- .oppenned span:nth-child(2) {
+ .opened span:nth-child(2) {
 	 overflow: visible;
 }
- .oppenned span:nth-child(1), .oppenned span:nth-child(3) {
+ .opened span:nth-child(1), .opened span:nth-child(3) {
 	 z-index: 100;
 	 transform: rotate(45deg);
 }
- .oppenned span:nth-child(1) {
+ .opened span:nth-child(1) {
 	 transform: rotate(45deg) translateY(12px) translateX(12px);
 }
- .oppenned span:nth-child(2) {
+ .opened span:nth-child(2) {
 	 height: 600px;
 	 width: 600px;
 	 right: -160px;
@@ -402,10 +402,10 @@ section.testimonials {
 	 border-radius: 50%;
 	 background-color: rgba(38, 84, 133, 0.54);
 }
- .oppenned span:nth-child(3) {
+ .opened span:nth-child(3) {
 	 transform: rotate(-45deg) translateY(-10px) translateX(10px);
 }
- .oppenned li {
+ .opened li {
 	 margin-right: 168px;
 }
  

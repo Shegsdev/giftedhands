@@ -1,18 +1,20 @@
 // Source: https://codepen.io/sergioandrade/pen/pXmKJv"
 $(document).ready(function() {
-    $(document).delegate('.open', 'click', function(event){
-        $(this).addClass('oppenned');
-        event.stopPropagation();
-    })
+    const el = document.querySelector('.open');
+    el.addEventListener('click', function(event) {
+       if (el.classList.contains('opened')) {
+            el.classList.remove('opened');
+                event.stopPropagation();
+        } else {
+            el.classList.add('opened');
+            event.stopPropagation();
+        } 
+    });
     $(document).delegate('body', 'click', function(event) {
-        $('.open').removeClass('oppenned');
-    })
-    $(document).delegate('.cls', 'click', function(event){
-        $('.open').removeClass('oppenned');
-        event.stopPropagation();
+        $('.open').removeClass('opened');
     });
     $(document).delegate('.ham_link', 'click', function(event){
-        $('.open').removeClass('oppenned');
+        $('.open').removeClass('opened');
         event.stopPropagation();
     });
 });
