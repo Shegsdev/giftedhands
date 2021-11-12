@@ -24,6 +24,9 @@
     </script>
 
     <style>
+        .content {
+            display: none;
+        }
         .back-arrow {
             border-radius: 50%;
             box-shadow: 1px 1px 3px 0px #999;
@@ -41,6 +44,19 @@
             width: 70%;
             transform: rotate(90deg);
         }
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3276c3;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            animation: spin 1s linear infinite;
+          }
+
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
 
         @media (max-width: 680px) {
             .back-arrow {
@@ -98,6 +114,11 @@
     </div>
 
     <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/loader.js"></script>
+    <script defer>
+      const pageContent = document.querySelector('.content');
+      renderLoader(pageContent, "block");
+    </script>
     <script>
       <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->
       $(document).ready(function() {

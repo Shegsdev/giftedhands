@@ -23,6 +23,9 @@ a {
 a:visited {
 	color: inherit;
 }
+#main {
+	display: none;
+}
 #top_header {
 	padding: 0 100px;
 }
@@ -139,7 +142,19 @@ footer .scroll-to-top img {
 	width: 2em;
 	transform: rotate(180deg);
 }
+.loader {
+	border: 3px solid #f3f3f3;
+	border-top: 3px solid #3276c3;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	animation: spin 1s linear infinite;
+}
 
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
 @media (max-width: 992px) {
 	p {
 		font-size: 14px;

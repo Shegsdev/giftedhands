@@ -37,7 +37,7 @@ ul {
 	list-style-type: none;
 }
 #wrapper {
-	display: flex;
+	display: none;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -53,14 +53,14 @@ ul {
 	padding-right: 8px;
 }
 #wrapper p {
-	animation: nameAnimation 8s forwards;
+	animation: nameAnimation 12s forwards;
 	opacity: 0;
 	font-size: 40px;
 	margin: 0 0 20px;
 	padding: 0;
 }
 #wrapper small {
-	animation: aboutAnimation 10s forwards;
+	animation: aboutAnimation 15s forwards;
 	color: #fff;
 }
 #wrapper a {

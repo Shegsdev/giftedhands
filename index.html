@@ -22,6 +22,19 @@
       gtag('config', 'UA-155071079-1');
     </script>
     <style>
+      .loader {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3276c3;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
       @media (max-width: 790px) {
         body {
           background: #3276c3;
@@ -43,7 +56,6 @@
           margin-right: 10px;
         }
         #wrapper {
-          display: block;
           margin: 50px auto;
         }
         #wrapper h1 {
@@ -99,10 +111,10 @@
       </div>      
     </div>
 
-    <script>
+    <script async>
       let i = 0;
       const text = 'Hi there!';
-      const speed = 130; /* The speed/duration of the effect in milliseconds */
+      const speed = 300; /* The speed/duration of the effect in milliseconds */
 
       function typeWriter() {
         if (i < text.length) {
@@ -113,6 +125,11 @@
       }
 
       document.addEventListener("DOMContentLoaded", typeWriter);
+    </script>
+    <script src="./assets/js/loader.js"></script>
+    <script defer>
+      const pageContent = document.querySelector('#wrapper');
+      renderLoader(pageContent, window.innerWidth < 800 ? "block" : "flex");
     </script>
   </body>
 </html>

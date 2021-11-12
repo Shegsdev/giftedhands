@@ -65,6 +65,7 @@ mark {
 	box-shadow: 2px 2px 2px #ddd;
 }
 #container {
+	display: none;
 	overflow: hidden;
 }
 .segment {
