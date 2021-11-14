@@ -115,9 +115,11 @@
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/loader.js"></script>
-    <script defer>
+    <script>
       const pageContent = document.querySelector('.content');
-      renderLoader(pageContent, "block");
+      document.addEventListener("DOMContentLoaded", function() {
+        renderLoader(pageContent, "block");
+      });
     </script>
     <script>
       <!-- Source: https://codepen.io/sergioandrade/pen/pXmKJv" -->

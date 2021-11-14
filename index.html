@@ -111,6 +111,13 @@
       </div>      
     </div>
 
+    <script>
+      const pageContent = document.querySelector('#wrapper');
+      document.addEventListener("DOMContentLoaded", function() {
+        renderLoader(pageContent, window.innerWidth < 800 ? "block" : "flex");
+      });
+    </script>
+
     <script async>
       let i = 0;
       const text = 'Hi there!';
@@ -127,9 +134,5 @@
       document.addEventListener("DOMContentLoaded", typeWriter);
     </script>
     <script src="./assets/js/loader.js"></script>
-    <script async>
-      const pageContent = document.querySelector('#wrapper');
-      renderLoader(pageContent, window.innerWidth < 800 ? "block" : "flex");
-    </script>
   </body>
 </html>
