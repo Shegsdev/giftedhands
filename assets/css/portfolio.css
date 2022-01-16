@@ -211,10 +211,10 @@ section.projects .water-mark {
   -webkit-filter: grayscale(10%);
 }
 .project-list .project-1 .card-image {
-	background-image: url("../images/crunchies_logo_main.png");
+	background-image: url("../images/banka.png");
 }
 .project-list .project-2 .card-image {
-	background-image: url("../images/banka.png");
+	background-image: url("../images/crunchies_logo_main.png");
 }
 .project-list .project-3 .card-image {
 	background-image: url("../images/movies.png");
