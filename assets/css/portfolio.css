@@ -22,21 +22,19 @@ button:hover {
 mark {
 	background-color: #fff;
 }
+.card {
+	border: 1px solid #bfbfbf;
+}
 .card .card-body {
-	background: #f7f7f7;
-	border: 1px solid #eee;
-	border-top: none;
+	background: #fff;
+	cursor: pointer;
 	padding: 10px;
 }
 .card:hover {
 	box-shadow: 1px 1px 8px 2px #eceaec;
 }
-.card .card-image {
-	border: 1px solid #eee;
-	border-bottom: none;
-}
-.card .card-image:hover {
-	cursor: pointer;
+.card .card-footer {
+	padding: 1em;
 }
 .card .card-actions {
 	margin: 10px 0;
@@ -162,14 +160,14 @@ section.skills {
 	position: relative;
 }
 section.skills .water-mark {
-	background-color: #c73c09;
+	background-color: teal;
 	border-radius: 50%;
 	height: 850px;	 
 	opacity: 0.15;
 	position: absolute;
 	width: 850px;
-	right: -250px;
-	top: -350px;
+	right: -350px;
+	top: -250px;
 }
 .page-3 .experience .role {
 	color: #3276c3;
@@ -198,32 +196,24 @@ section.projects .water-mark {
 	gap: 1em;
 	margin-bottom: 1em;
 }
-.project-list .card-image {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 250px;
-	filter: grayscale(90%);
-  -webkit-filter: grayscale(90%);
+.project-list .card-body {
+	text-align: center;
 }
-.project-list .card-image:hover {
+.project-list .card-body span {
+	font-size: 9em;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+    color: lightgrey;
+}
+.project-list .card-body small {
+	display: inline-block;
+}
+.project-list .card-body:hover {
 	filter: grayscale(10%);
   -webkit-filter: grayscale(10%);
-}
-.project-list .project-1 .card-image {
-	background-image: url("../images/banka.png");
-}
-.project-list .project-2 .card-image {
-	background-image: url("../images/crunchies_logo_main.png");
-}
-.project-list .project-3 .card-image {
-	background-image: url("../images/movies.png");
-}
-.project-list .project-4 .card-image {
-	background-image: url("../images/neuraltechx.png");
-}
-.project-list .project-5 .card-image {
-	background-image: url("../images/odun.png");
 }
 .footer {
 	background-color: #191f26;
