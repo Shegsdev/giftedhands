@@ -134,6 +134,22 @@ button:focus {
 	padding-right: 55px;
 	text-align: justify;
 }
+section.objective blockquote {
+	border-bottom: 1px solid lightgrey;
+	text-align: justify;
+	line-height: 2.5;
+    position: relative;
+    width: 600px;
+    margin: auto;
+    padding-bottom: 4.5em;
+}
+section.objective blockquote span {
+	font-size: 450px;
+    position: absolute;
+    top: -430px;
+    left: -20px;
+    opacity: 0.1;
+}
 section h3 {
 	margin-bottom: .5em;
 }

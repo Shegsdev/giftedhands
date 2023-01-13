@@ -98,6 +98,14 @@
 }
 
 @media (max-width: 480px) {
+	section.objective blockquote {
+		line-height: 2em;
+		text-align: left;
+	    width: 100%;
+	}
+	section.objective blockquote span {
+	    top: 120px;
+	}
 	.page-5 .int-skill__list section h1 {
 	 	font-size: 16px;
 	}
