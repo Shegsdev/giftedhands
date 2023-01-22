@@ -18,5 +18,5 @@ function renderLoader(el, display) {
       document.body.removeChild(loaderContainer);
       el.style.display = display;
     }
-  }, 1000);
+  }, 300);
 }
